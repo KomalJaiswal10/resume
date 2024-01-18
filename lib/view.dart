@@ -36,8 +36,8 @@ class ResumeView extends StatelessWidget {
                                 ))),
                       ),
                       Positioned(
-                        right: 30,
-                        top: 55,
+                        right: 45,
+                        top: 46,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
@@ -50,11 +50,14 @@ class ResumeView extends StatelessWidget {
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold),
                               ),
+                              const SizedBox(
+                                height: 4,
+                              ),
                               Text(
                                 'FLUTTER DEVELOPER',
                                 style: GoogleFonts.lato(
                                     color: Colors.white,
-                                    fontSize: 12,
+                                    fontSize: 10,
                                     fontWeight: FontWeight.w500),
                               ),
                             ],
@@ -65,25 +68,148 @@ class ResumeView extends StatelessWidget {
                         margin: const EdgeInsets.only(top: 135),
                         clipBehavior: Clip.none,
                         alignment: Alignment.bottomCenter,
-                        height: 80,
+                        height: 55,
                         color: Colors.grey[300],
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 10, right: 5),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Row(
+                                children: [
+                                  const Expanded(flex: 2, child: SizedBox()),
+                                  Expanded(
+                                      flex: 7,
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                              flex: 4,
+                                              child: Column(
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                        'assets/gmail.png',
+                                                        width: 12,
+                                                      ),
+                                                      const SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        'komaljaiswal2810@gmail.com',
+                                                        style: GoogleFonts.lato(
+                                                            color:
+                                                                Colors.blueGrey,
+                                                            fontSize: 10,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .bold),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                        'assets/phone-call.png',
+                                                        width: 12,
+                                                      ),
+                                                      const SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        '9892771775',
+                                                        style: GoogleFonts.lato(
+                                                            color:
+                                                                Colors.blueGrey,
+                                                            fontSize: 10,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .bold),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
+                                              )),
+                                          Expanded(
+                                              flex: 5,
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                        'assets/linkedin.png',
+                                                        width: 12,
+                                                      ),
+                                                      const SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        'linkedin.com/in/komal-jaiswal-1a9842234/',
+                                                        style: GoogleFonts.lato(
+                                                            color:
+                                                                Colors.blueGrey,
+                                                            fontSize: 10,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .bold),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Row(
+                                                    children: [
+                                                      Image.asset(
+                                                        'assets/github.png',
+                                                        width: 12,
+                                                      ),
+                                                      const SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text(
+                                                        'github.com/KomalJaiswal10',
+                                                        style: GoogleFonts.lato(
+                                                            color:
+                                                                Colors.blueGrey,
+                                                            fontSize: 10,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .bold),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
+                                              )),
+                                        ],
+                                      )),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                       Positioned(
-                        left: 30,
-                        top: 70,
+                        left: 15,
+                        top: 80,
                         child: HexagonWidget.pointy(
-                          width: 95,
+                          width: 75,
                           color: Colors.white,
                           elevation: 8,
                           child: HexagonWidget.pointy(
-                            width: 90,
+                            width: 70,
                             color: const Color(0xff001F3F),
                             elevation: 0,
                             child: Text(
                               'Developed In\nFlutter',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.lato(
-                                  fontSize: 12,
+                                  fontSize: 8,
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
