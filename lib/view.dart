@@ -19,13 +19,13 @@ class ResumeView extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  height: 280,
+                  height: 180,
                   color: Colors.white,
                   child: Stack(
                     clipBehavior: Clip.none,
                     children: [
                       Container(
-                        height: 130,
+                        height: 120,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: const AssetImage('assets/bg.jpg'),
@@ -36,8 +36,8 @@ class ResumeView extends StatelessWidget {
                                 ))),
                       ),
                       Positioned(
-                        right: 45,
-                        top: 46,
+                        right: 15,
+                        top: 45,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
@@ -47,7 +47,7 @@ class ResumeView extends StatelessWidget {
                                 'KOMAL DINESH JAISWAL',
                                 style: GoogleFonts.lato(
                                     color: Colors.white,
-                                    fontSize: 22,
+                                    fontSize: 20,
                                     fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(
@@ -65,7 +65,7 @@ class ResumeView extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.only(top: 135),
+                        margin: const EdgeInsets.only(top: 125),
                         clipBehavior: Clip.none,
                         alignment: Alignment.bottomCenter,
                         height: 55,
@@ -77,26 +77,26 @@ class ResumeView extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  const Expanded(flex: 2, child: SizedBox()),
+                                  const Expanded(flex: 3, child: SizedBox()),
                                   Expanded(
                                       flex: 7,
                                       child: Row(
                                         children: [
                                           Expanded(
-                                              flex: 4,
+                                              flex: 5,
                                               child: Column(
                                                 children: [
                                                   Row(
                                                     children: [
                                                       Image.asset(
-                                                        'assets/gmail.png',
-                                                        width: 12,
+                                                        'assets/phone-call.png',
+                                                        width: 11,
                                                       ),
                                                       const SizedBox(
                                                         width: 8,
                                                       ),
                                                       Text(
-                                                        'komaljaiswal2810@gmail.com',
+                                                        '+91-9892-7717-75',
                                                         style: GoogleFonts.lato(
                                                             color:
                                                                 Colors.blueGrey,
@@ -113,14 +113,14 @@ class ResumeView extends StatelessWidget {
                                                   Row(
                                                     children: [
                                                       Image.asset(
-                                                        'assets/phone-call.png',
+                                                        'assets/gmail.png',
                                                         width: 12,
                                                       ),
                                                       const SizedBox(
                                                         width: 8,
                                                       ),
                                                       Text(
-                                                        '9892771775',
+                                                        'komaljaiswal2810@gmail.com',
                                                         style: GoogleFonts.lato(
                                                             color:
                                                                 Colors.blueGrey,
@@ -149,7 +149,7 @@ class ResumeView extends StatelessWidget {
                                                         width: 8,
                                                       ),
                                                       Text(
-                                                        'linkedin.com/in/komal-jaiswal-1a9842234/',
+                                                        'linkedin.com/in/komal-jaiswal/',
                                                         style: GoogleFonts.lato(
                                                             color:
                                                                 Colors.blueGrey,
@@ -195,8 +195,8 @@ class ResumeView extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        left: 15,
-                        top: 80,
+                        left: 30,
+                        top: 70,
                         child: HexagonWidget.pointy(
                           width: 75,
                           color: Colors.white,
@@ -219,14 +219,56 @@ class ResumeView extends StatelessWidget {
                     ],
                   ),
                 ),
-                // Container(
-                //   clipBehavior: Clip.none,
-                //   alignment: Alignment.bottomCenter,
-                //   height: 50,
-                //   color: Colors.grey[300],
-                // ),
-
-                // const Expanded(flex: 8, child: Column())
+                const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Dedicated and skilled Flutter developer with 1.6 years of experience in designing and implementing mobile and web applications. Seeking opportunities to contribute my skills to innovative projects in a growth-oriented environment.',
+                        style: GoogleFonts.lato(
+                            fontSize: 10,
+                            color: Colors.blueGrey,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      const Divider(),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        children: [
+                          Expanded(
+                              child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'EDUCATION',
+                                style: GoogleFonts.lato(
+                                    fontSize: 12,
+                                    color: Colors.transparent,
+                                    decoration: TextDecoration.underline,
+                                    shadows: [
+                                      const Shadow(
+                                          color: Color(0xff001F3F),
+                                          offset: Offset(0, -3))
+                                    ],
+                                    fontWeight: FontWeight.w800),
+                              )
+                            ],
+                          )),
+                          Expanded(
+                            child: Container(
+                                // color: Colors.grey[300],
+                                // width: 100,
+                                ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
